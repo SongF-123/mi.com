@@ -110,6 +110,9 @@
 .com-product .container .pro-left > ul > li .pro-left-nav ul li a {
   text-decoration: none;
 }
+.com-product .container .pro-left > ul > li .pro-left-nav ul li a span {
+  color: #000;
+}
 .com-product .container .pro-left > ul > li .list-2 {
   width: 530px;
 }
