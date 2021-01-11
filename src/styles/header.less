@@ -1,0 +1,371 @@
+@charset 'utf-8';
+/* 头部 导航栏 */
+.header>.nav {
+    background: #333;
+    height: 40px;
+
+    >.container {
+        padding: 0;
+        height: 40px;
+        margin: 0 60px;
+        width: 1226px;
+        margin: 0 auto;
+
+        .topnav {
+            float: left;
+            height: 40px;
+            margin-bottom: 0;
+            width: 800px;
+
+            /* 下载APP */
+            .appdownload {
+                position: relative;
+
+                .glyphicon-triangle-top {
+                    font-size: 12px;
+                    color: #fff;
+                    position: absolute;
+                    top: 31px;
+                    left: 40%;
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    display: none
+                }
+
+                /* 下载APP的二级导航 */
+                >.appcode {
+                    position: absolute;
+                    z-index: 100;
+                    top: 40px;
+                    left: 50%;
+                    width: 124px;
+                    height: 0;
+                    margin-left: -60px;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    border-top: 0;
+                    box-shadow: 1px 1px 1px #ccc;
+                    text-align: center;
+
+                    overflow: hidden;
+                    transition: height 0.3s;
+
+                    >img {
+                        display: block;
+                        width: 90px;
+                        height: 90px;
+                        margin: 18px auto 12px;
+                    }
+
+                    >p {
+                        font-size: 14px;
+                        margin: 0;
+                        line-height: 30px
+                    }
+                }
+            }
+
+            .appdownload:hover {
+                >.glyphicon-triangle-top {
+                    display: block;
+                }
+
+                >.appcode {
+                    height: 150px;
+                }
+            }
+
+            li {
+                float: left;
+                line-height: 40px;
+                cursor: pointer;
+
+                a {
+                    font-size: 12px;
+                    color: #b0b0b0;
+                    text-decoration: none;
+                }
+            }
+
+            li:hover {
+                >a {
+                    color: #fff
+                }
+            }
+
+            >span {
+                float: left;
+                line-height: 40px;
+                margin: 0 7px;
+                color: #424242
+            }
+        }
+
+
+
+        /* 中间登录、注册 */
+        .toplogin {
+            float: right;
+
+            >li {
+                float: left;
+                line-height: 40px;
+                cursor: pointer;
+
+                a {
+                    font-size: 12px;
+                    color: #b0b0b0;
+                    text-decoration: none;
+                }
+            }
+
+            >li:hover {
+                >a {
+                    color: #fff
+                }
+            }
+
+            >span {
+                float: left;
+                line-height: 40px;
+                margin: 0 7px;
+                color: #424242
+            }
+        }
+
+        /* 右边购物车 */
+        .topcar {
+            float: right;
+            margin-left: 15px;
+            background: #424242;
+            position: relative;
+
+            a {
+                line-height: 40px;
+                padding: 0 20px 0 10px;
+                text-decoration: none;
+
+                em {
+                    color: #b0b0b0;
+                    font-style: normal;
+                    vertical-align: bottom;
+                }
+
+                .glyphicon-shopping-cart {
+                    font-size: 18px;
+                }
+            }
+
+            /* 购物车二级导航 */
+            .car-nav {
+                width: 320px;
+                height: 0;
+                background: #fff;
+                box-shadow: 0 2px 10px rgb(3, 3, 3, 0.15);
+                position: absolute;
+                top: 40px;
+                right: 0;
+                z-index: 100;
+
+                overflow: hidden;
+                transition: height 0.3s;
+            }
+        }
+
+        .topcar:hover {
+            background: #fff;
+
+            .car-nav {
+                height: 100px
+            }
+
+            em {
+                color: orangered
+            }
+        }
+    }
+}
+
+/* logo */
+.commodity {
+    position: relative;
+}
+
+.commodity>.container {
+    width: 1226px;
+    padding: 0;
+    /* background: #ccc */
+
+
+    .header-logo {
+        width: 55px;
+        height: 55px;
+        margin-top: 22px;
+        float: left;
+
+    }
+
+    .header-logo>a {
+        background: #ff6700;
+        display: block;
+        width: 55px;
+        height: 55px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .header-logo>a::before,
+    .header-logo>a::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 55px;
+        width: 55px;
+        content: "";
+        transition: transform .3s;
+    }
+
+    .header-logo>a::before {
+        background: url(https://s02.mifile.cn/assets/static/image/mi-logo.png)no-repeat 50% 50%;
+    }
+
+    .header-logo>a::after {
+        background: url(https://s02.mifile.cn/assets/static/image/mi-home.png)no-repeat 50% 50%;
+        margin-left: -55px;
+    }
+
+    .header-logo>a:hover:after,
+    .header-logo>a:hover:before {
+        transform: translate(55px);
+    }
+
+    /* logo 中间的商品导航 */
+    .com-nav {
+        height: 100px;
+
+        /* background: green; */
+        float: left;
+        margin-left: 140px;
+
+        .com-nav-list {
+            padding: 12px 0 0 30px;
+            margin-bottom: 0;
+
+            >li {
+                float: left;
+
+                >a {
+                    padding: 26px 10px 38px 10px;
+                    line-height: 88px;
+                    font-size: 16px;
+                    color: #333;
+                    text-decoration: none;
+                }
+
+                /* 二级导航 */
+                .com-children {
+                    background: #fff;
+                    position: absolute;
+                    top: 100px;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    // border-top: 1px solid #ccc;
+                    box-shadow: 0px 0px 1px #ccc;
+                    z-index: 200;
+                    overflow: hidden;
+                    transition: height 0.3s;
+
+                    ul {
+                        margin-left: 55px;
+                        padding-top: 36px;
+                        padding-bottom: 20px;
+                    }
+
+                    ul>li {
+                        float: left;
+                        text-align: center;
+
+                        a {
+                            text-decoration: none;
+
+                            >span {
+                                display: block;
+                                border-right: 1px solid #ccc;
+                                padding: 0 25px;
+                                margin-bottom: 20px;
+
+                            }
+
+                            p {
+                                font-size: 12px;
+                                color: #757575;
+                                margin-bottom: 0
+                            }
+
+                            p:last-child {
+                                color: orangered;
+                            }
+                        }
+                    }
+
+                    li:last-child span {
+                        border-right: 0;
+                    }
+                }
+            }
+
+            >li:hover {
+                cursor: pointer;
+
+                a {
+                    color: orangered;
+                }
+
+                .com-children {
+                    height: 230px;
+
+                }
+            }
+        }
+    }
+
+    /* 右边的搜索 */
+    .com-search {
+        position: absolute;
+        top: 25px;
+        right: 60px;
+
+        a {
+            text-decoration: none;
+        }
+
+        .search-text {
+            width: 223px;
+            height: 48px;
+            outline: 0;
+            border: 1px solid #b0b0b0;
+            margin: 0;
+        }
+
+        .search-submit {
+            height: 48px;
+            width: 52px;
+            background: #fff;
+            outline: 0;
+            border: 1px solid #b0b0b0;
+            margin-left: -5px;
+            vertical-align: bottom;
+            color: #000;
+            font-size: 20px;
+            font-weight: 600;
+
+            &:hover {
+                background: #ff6700;
+                color: #fff;
+            }
+        }
+
+    }
+}

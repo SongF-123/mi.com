@@ -1,0 +1,189 @@
+@charset 'utf-8';
+/* 尾部 */
+.footer {
+  height: 500px;
+}
+.footer .footer-nav > .container {
+  width: 1226px;
+  padding: 0;
+}
+.footer .footer-nav > .container .fotnav-top {
+  padding: 27px 0;
+  border-bottom: 1px solid #ccc;
+}
+.footer .footer-nav > .container .fotnav-top ul {
+  margin: 0;
+}
+.footer .footer-nav > .container .fotnav-top ul li {
+  float: left;
+  text-align: center;
+  width: 19.8%;
+  padding: 0;
+  border-left: 1px solid #ccc;
+}
+.footer .footer-nav > .container .fotnav-top ul li:first-child {
+  border-left: 0;
+}
+.footer .footer-nav > .container .fotnav-top ul li:hover a {
+  color: orangered;
+}
+.footer .footer-nav > .container .fotnav-top ul li a {
+  font-size: 16px;
+  color: #616161;
+  text-decoration: none;
+}
+.footer .footer-nav > .container .fotnav-top ul li a span {
+  font-size: 24px;
+  margin-right: 6px;
+}
+.footer .footer-nav > .container .fotnav-bot {
+  padding: 40px 0;
+}
+.footer .footer-nav > .container .fotnav-bot ul {
+  float: left;
+  width: 160px;
+}
+.footer .footer-nav > .container .fotnav-bot ul p {
+  font-size: 14px;
+  color: #424242;
+  margin-bottom: 26px;
+}
+.footer .footer-nav > .container .fotnav-bot ul li {
+  margin-top: 12px;
+  font-size: 12px;
+}
+.footer .footer-nav > .container .fotnav-bot ul li a {
+  text-decoration: none;
+  color: #757575;
+}
+.footer .footer-nav > .container .fotnav-bot ul li a:hover {
+  color: orangered;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact {
+  float: right;
+  width: 250px;
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact p {
+  color: #ff6700;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact p:nth-child(2) {
+  color: #616161;
+  font-size: 12px;
+  font-style: normal;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact > a {
+  box-sizing: content-box;
+  display: inline-block;
+  width: 118px;
+  height: 28px;
+  border: 1px solid #ff6700;
+  color: #ff6700;
+  text-decoration: none;
+  background: #fff;
+  line-height: 28px;
+  font-size: 12px;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact > a:hover {
+  background: #ff6700;
+  color: #fff;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact > div {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #616161;
+  position: relative;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact > div a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #757575;
+  margin-left: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact > div a:hover {
+  color: #ff6700;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact > div a:nth-child(2):hover img {
+  display: block;
+}
+.footer .footer-nav > .container .fotnav-bot .fot-contact > div img {
+  width: 126px;
+  height: 126px;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  display: none;
+}
+.footer .footer-inner {
+  background: #fafafa;
+  padding: 30px 0;
+}
+.footer .footer-inner .container {
+  width: 1226px;
+  padding: 0;
+  position: relative;
+}
+.footer .footer-inner .container .foot-logo {
+  width: 57px;
+  height: 57px;
+  background: url(https://s02.mifile.cn/assets/static/image/logo-footer.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 10px;
+}
+.footer .footer-inner .container .foot-text {
+  padding-left: 67px;
+  color: #b0b0b0;
+}
+.footer .footer-inner .container .foot-text p {
+  font-size: 12px;
+  margin-bottom: 0;
+  line-height: 18px;
+}
+.footer .footer-inner .container .foot-text p a {
+  color: #757575;
+  text-decoration: none;
+}
+.footer .footer-inner .container .foot-text p a:hover {
+  color: #ff6700;
+}
+.footer .footer-inner .container .foot-text p:nth-child(3) a {
+  color: #b0b0b0;
+}
+.footer .footer-inner .container .foot-text p:nth-child(3) a:hover {
+  color: #ff6700;
+}
+.footer .footer-inner .container .foot-links {
+  padding-left: 67px;
+}
+.footer .footer-inner .container .foot-links .links-last {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.footer .footer-inner .container .foot-links .links-last > img {
+  height: 40px;
+  width: auto;
+  margin-left: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer .footer-inner .container .foot-links img {
+  height: 28px;
+  width: auto;
+}
+.footer .footer-inner .container .foot-slogn {
+  width: 100%;
+  height: 19px;
+  margin-top: 30px;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png) center no-repeat;
+}

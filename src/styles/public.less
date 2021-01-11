@@ -1,0 +1,241 @@
+@charset 'utf-8';
+
+/* 公共样式 */
+* {
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+    }
+}
+li {
+    list-style: none
+}
+
+ul {
+    margin-bottom: 0
+}
+
+/* h2标题通用样式及类名 */
+.public-title-h2 {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+
+/* h3标题通用样式及类名 */
+.public-title-h3 {
+    /* font-size: 14px;
+    margin: 0 10px 5px;
+    color: #333 */
+    font-size: 14px;
+    margin: 0 20px 5px;
+    font-weight: 400;
+    color: #212121;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*  p标签通用样式及类名*/
+.public-title-p {
+    font-size: 12px;
+    color: #b0b0b0;
+    height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0 20px 12px;
+
+}
+
+/* 公用图片外面的div  */
+.public-img-div {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 22px;
+
+}
+
+/* 公用图片 */
+.public-img-size {
+    width: 160px;
+    height: 160px;
+}
+
+/* 公用删除线 */
+.public-del {
+
+    color: #ccc
+}
+
+/* 公用列表 */
+.public-li-size {
+    margin-left: 14px;
+    margin-bottom: 14px;
+    box-sizing: content-box;
+    padding: 20px 0;
+    width: 234px;
+    height: 260px;
+    float: left;
+    background: #fff;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+/* 最后一个li标签 */
+.public-li-size-last {
+    margin-left: 14px;
+    margin-bottom: 14px;
+    position: relative;
+
+
+}
+
+/* 最后一个li标签上部分 */
+.li-last-top {
+    width: 234px;
+    height: 143px;
+    background: #fff;
+    margin-bottom: 14px;
+    transition: all 0.3s linear;
+
+    .li-last-div {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: 20px;
+        top: 32px;
+
+        >img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    h3 {
+        font-size: 14px;
+        color: #333;
+        line-height: 20px;
+        width: 94px;
+        height: 63px;
+        /* margin-top:0; */
+
+        margin: 35px 0 0 24px;
+        ;
+
+    }
+
+    p {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+}
+
+/* 最后一个li标签下部分 */
+.li-last-bottom {
+    width: 234px;
+    height: 143px;
+    background: #fff;
+    /* margin-top:14px; */
+    position: relative;
+    transition: all 0.3s linear;
+
+    p {
+        font-size: 18px;
+        color: #333;
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-bottom: 0;
+    }
+
+    small {
+        font-size: 12px;
+        color: #757575;
+        margin-left: 30px;
+    }
+
+    .glyphicon-arrow-right {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        border: 3px solid orangered;
+        border-radius: 50%;
+        font-size: 20px;
+        text-align: center;
+        color: orangered;
+        position: absolute;
+        top: 48px;
+        right: 35px;
+        padding-top: 8px;
+
+    }
+
+}
+
+/* 公用布局 3份 */
+.col-md-3 {
+    width: 234px;
+    padding: 0;
+    float: left;
+
+}
+
+.col-md-3-li {
+    margin-bottom: 14px;
+    transition: all 0.3s linear;
+}
+
+/* 公用布局 9份 */
+.col-md-9 {
+    width: 978px;
+    padding: 0;
+    float: left;
+}
+
+/* 隐藏 */
+.hide {
+    display: none;
+}
+
+/* 显示 */
+.show {
+    display: block;
+}
+
+/* 更多 */
+.public-more {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    a {
+        font-size: 15px;
+        line-height: 58px;
+        color: #424242;
+        text-decoration: none;
+
+        i {
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+            margin-left: 8px;
+            background: #b0b0b0;
+            color: #fff;
+            border-radius: 50%;
+            font-weight: normal;
+        }
+    }
+
+    &:hover {
+        a {
+            color: orangered;
+        }
+
+        i {
+            background: orangered;
+        }
+    }
+}
