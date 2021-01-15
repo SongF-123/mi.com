@@ -1,0 +1,355 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+* a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin-bottom: 0;
+}
+/* h2标题通用样式及类名 */
+.public-title-h2 {
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+}
+/* h3标题通用样式及类名 */
+.public-title-h3 {
+  /* font-size: 14px;
+    margin: 0 10px 5px;
+    color: #333 */
+  font-size: 14px;
+  margin: 0 20px 5px;
+  font-weight: 400;
+  color: #212121;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/*  p标签通用样式及类名*/
+.public-title-p {
+  font-size: 12px;
+  color: #b0b0b0;
+  height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 20px 12px;
+}
+/* 公用图片外面的div  */
+.public-img-div {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 22px;
+}
+/* 公用图片 */
+.public-img-size {
+  width: 160px;
+  height: 160px;
+}
+/* 公用删除线 */
+.public-del {
+  color: #ccc;
+}
+/* 公用列表 */
+.public-li-size {
+  margin-left: 14px;
+  margin-bottom: 14px;
+  box-sizing: content-box;
+  padding: 20px 0;
+  width: 234px;
+  height: 260px;
+  float: left;
+  background: #fff;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+/* 最后一个li标签 */
+.public-li-size-last {
+  margin-left: 14px;
+  margin-bottom: 14px;
+  position: relative;
+}
+/* 最后一个li标签上部分 */
+.li-last-top {
+  width: 234px;
+  height: 143px;
+  background: #fff;
+  margin-bottom: 14px;
+  transition: all 0.3s linear;
+}
+.li-last-top .li-last-div {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 32px;
+}
+.li-last-top .li-last-div > img {
+  width: 80px;
+  height: 80px;
+}
+.li-last-top h3 {
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  width: 94px;
+  height: 63px;
+  /* margin-top:0; */
+  margin: 35px 0 0 24px;
+}
+.li-last-top p {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+/* 最后一个li标签下部分 */
+.li-last-bottom {
+  width: 234px;
+  height: 143px;
+  background: #fff;
+  /* margin-top:14px; */
+  position: relative;
+  transition: all 0.3s linear;
+}
+.li-last-bottom p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+.li-last-bottom small {
+  font-size: 12px;
+  color: #757575;
+  margin-left: 30px;
+}
+.li-last-bottom .glyphicon-arrow-right {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid orangered;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  color: orangered;
+  position: absolute;
+  top: 48px;
+  right: 35px;
+  padding-top: 8px;
+}
+/* 公用布局 3份 */
+.col-md-3 {
+  width: 234px;
+  padding: 0;
+  float: left;
+}
+.col-md-3-li {
+  margin-bottom: 14px;
+  transition: all 0.3s linear;
+}
+/* 公用布局 9份 */
+.col-md-9 {
+  width: 978px;
+  padding: 0;
+  float: left;
+}
+/* 隐藏 */
+.hide {
+  display: none;
+}
+/* 显示 */
+.show {
+  display: block;
+}
+/* 更多 */
+.public-more {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.public-more a {
+  font-size: 15px;
+  line-height: 58px;
+  color: #424242;
+  text-decoration: none;
+}
+.public-more a i {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-left: 8px;
+  background: #b0b0b0;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: normal;
+}
+.public-more:hover a {
+  color: orangered;
+}
+.public-more:hover i {
+  background: orangered;
+}
+.logo > a {
+  display: inline-block;
+  width: 1130px;
+  padding: 0;
+  height: 98px;
+  background: url(https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png) no-repeat left;
+}
+.main {
+  height: 588px;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/72644d9b8031286de3cc74e151aefd90.jpg) center;
+}
+.main .container {
+  width: 1130px;
+  height: 588px;
+  padding: 0;
+  /* background: yellow; */
+}
+.main .container .login {
+  width: 410px;
+  height: 558px;
+  background: #fff;
+  float: right;
+  margin-top: 31px;
+}
+.main .container .login a {
+  text-decoration: none;
+}
+.main .container .login .title {
+  height: 82px;
+  line-height: 82px;
+  font-size: 24px;
+  text-align: center;
+}
+.main .container .login .title a {
+  color: #666;
+}
+.main .container .login .title .number {
+  color: #ff6700;
+}
+.main .container .login .title span {
+  margin: 0 35px;
+}
+.main .container .login .body {
+  text-align: center;
+}
+.main .container .login .body .text,
+.main .container .login .body .pass {
+  padding: 0 20px;
+  display: block;
+  margin: 0 auto 10px;
+  width: 332px;
+  height: 50px;
+  outline: 0;
+}
+.main .container .login .body .btn {
+  display: block;
+  width: 332px;
+  height: 50px;
+  background: #ff6700;
+  margin: 20px auto 10px;
+  color: #fff;
+  font-size: 16px;
+}
+.main .container .login .body > a {
+  color: #ff6700;
+}
+.main .container .login .body .register {
+  height: 88px;
+  line-height: 88px;
+}
+.main .container .login .body .register a {
+  color: #999;
+}
+.main .container .login .body .register span {
+  color: #999;
+}
+.main .container .login .body .Icon {
+  height: 50px;
+  /*   background: red; */
+  margin-top: 90px;
+  text-align: center;
+}
+.main .container .login .body .Icon a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.main .container .login .body .Icon a:nth-child(1) {
+  background: #0288d1;
+}
+.main .container .login .body .Icon a:nth-child(2) {
+  background: #d32f2f;
+}
+.main .container .login .body .Icon a:nth-child(3) {
+  background: #0ae;
+}
+.main .container .login .body .Icon a:nth-child(4) {
+  background: #00d20d;
+  margin-right: 0;
+}
+.main .container .login .body .Icon a span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.main .container .login .body .Icon a .qq {
+  background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png) no-repeat -18px;
+  line-height: 50px;
+}
+.main .container .login .body .Icon a .weibo {
+  background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png) no-repeat -37px;
+  line-height: 50px;
+}
+.main .container .login .body .Icon a .weixin {
+  background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png) no-repeat -85px;
+  line-height: 50px;
+}
+.main .container .login .body .Icon a .alipay {
+  background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png) no-repeat -57px;
+  line-height: 50px;
+}
+.footer {
+  background: #fff;
+  height: 180px;
+  padding-top: 100px;
+  text-align: center;
+}
+.footer .nf-link-area {
+  margin: 0 auto;
+  width: 1130px;
+  margin-bottom: 20px;
+}
+.footer .nf-link-area ul {
+  margin-left: 350px;
+}
+.footer .nf-link-area li,
+.footer .nf-link-area span {
+  float: left;
+  color: #333;
+}
+.footer .nf-link-area a {
+  text-decoration: none;
+  color: #333;
+}
+.footer .nf-link-area span {
+  margin: 0 20px;
+}
+.footer .nf-intro {
+  color: #333;
+}
+.footer .nf-intro a {
+  text-decoration: none;
+  color: #333;
+}

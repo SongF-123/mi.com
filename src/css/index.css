@@ -337,13 +337,13 @@
 .content-main > .container .appliance .box-hd .appli-more li {
   float: left;
   font-size: 16px;
-  color: #333;
+  /* color: #333; */
   margin-left: 30px;
   cursor: pointer;
-}
-.content-main > .container .appliance .box-hd .appli-more li:first-child {
-  border-bottom: 2px solid #ff6700;
-  color: #ff6700;
+  /*   &:first-child {
+                            border-bottom: 2px solid #ff6700;
+                            color: #ff6700;
+                        } */
 }
 .content-main > .container .appliance .box-bd {
   width: 1226px;

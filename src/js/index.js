@@ -23,7 +23,11 @@ $.ajax({
                 </p>
             </a>
         </li>`;
+
+
         });
+
         $('.phone>.box-bd .col-md-9>.rendering').append(temp);
+
     }
 });
