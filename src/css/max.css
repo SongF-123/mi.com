@@ -357,6 +357,8 @@ ul {
 .commodity > .container {
   width: 1226px;
   padding: 0;
+  position: relative;
+  margin: 0 auto;
   /* background: #ccc */
   /* logo 中间的商品导航 */
   /* 右边的搜索 */
@@ -563,6 +565,7 @@ ul {
   position: absolute;
   top: 25px;
   right: 60px;
+  float: right;
 }
 .commodity > .container .com-search a {
   text-decoration: none;
@@ -795,6 +798,7 @@ ul {
   color: #fff;
   font-size: 24px;
   line-height: 46px;
+  margin-top: 5px;
 }
 .content-main > .container .home-flashsale > .box-bd .count-down .codn-num i {
   font-style: normal;
@@ -1016,10 +1020,9 @@ ul {
 .position {
   position: fixed;
   bottom: 40px;
-  right: 33px;
+  left: 50%;
   width: 27px;
-  border-left: 1px solid #f5f5f5;
-  border-right: 1px solid #f5f5f5;
+  margin-left: 613px;
   z-index: 250;
 }
 .position a {

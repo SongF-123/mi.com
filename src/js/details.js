@@ -1,5 +1,7 @@
 import './library/jquery.js';
 import { cookie } from '../js/library/cookie.js';
+import './library/swiper.min.js'
+import './library/top.js'
 
 let id = location.search.split('=')[1];
 
@@ -37,6 +39,28 @@ $.ajax({
                 // alert(1)
 
         })
+
+        var swiper = new Swiper('.swiper-container ', {
+
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination ',
+                clickable: true,
+
+            },
+
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 2000
+            },
+            navigation: {
+                nextEl: '.swiper-button-next ',
+                prevEl: '.swiper-button-prev ',
+            },
+        });
+
+
     }
 });
 

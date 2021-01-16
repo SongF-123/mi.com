@@ -195,6 +195,10 @@ ul {
 .public-more:hover i {
   background: orangered;
 }
+.active {
+  border-bottom: 2px solid #ff6700;
+  color: #ff6700;
+}
 /* 导航栏 */
 .header > .nav {
   background: #333;
@@ -353,6 +357,8 @@ ul {
 .commodity > .container {
   width: 1226px;
   padding: 0;
+  position: relative;
+  margin: 0 auto;
   /* background: #ccc */
   /* logo 中间的商品导航 */
   /* 右边的搜索 */
@@ -559,6 +565,7 @@ ul {
   position: absolute;
   top: 25px;
   right: 60px;
+  float: right;
 }
 .commodity > .container .com-search a {
   text-decoration: none;
@@ -926,10 +933,9 @@ ul {
 .position {
   position: fixed;
   bottom: 40px;
-  right: 33px;
+  left: 50%;
+  margin-left: 613px;
   width: 27px;
-  border-left: 1px solid #f5f5f5;
-  border-right: 1px solid #f5f5f5;
   z-index: 250;
 }
 .position a {

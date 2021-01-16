@@ -157,6 +157,8 @@
 .commodity > .container {
   width: 1226px;
   padding: 0;
+  position: relative;
+  margin: 0 auto;
   /* background: #ccc */
   /* logo 中间的商品导航 */
   /* 右边的搜索 */
@@ -363,6 +365,7 @@
   position: absolute;
   top: 25px;
   right: 60px;
+  float: right;
 }
 .commodity > .container .com-search a {
   text-decoration: none;

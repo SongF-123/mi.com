@@ -17,20 +17,12 @@ $result = $mysqli->query($sql);
 // $result->num_rows=0时 数据库没有改数据
 // 并将数据写入数据库
 if ($result->num_rows > 0) {
-    //    echo '1';
-
+       echo '1';
 } else {
-    // echo '0';
-
-
+    echo '0';
     $sqll = "INSERT INTO users (phone) VALUES ('$phone')";
-    echo $sqll;
+    // echo $sqll;
     $res = $mysqli->query($sqll);
 }
-
-
-
-
-
 
 $mysqli->close();

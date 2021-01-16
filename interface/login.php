@@ -12,17 +12,9 @@ $result = $mysqli->query($sql);
 // var_dump ($result);
 
 if($result->num_rows>0){
-
-   
-
-
-   echo '<script>alert("登陆成功")</script>';
-     echo '<script>location.href="../src/html/index.html"</script>';
-
+   echo '1';
 }else{
-    echo '<script>alert("用户名或密码错误")</script>';
-    echo '<script>location.href="../src/html/login.html"</script>';
-    /* echo "0"; */
+  echo '0';
 }
 $mysqli->close();
 ?>

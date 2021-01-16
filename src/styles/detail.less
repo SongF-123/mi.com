@@ -54,8 +54,9 @@
         text-decoration: none;
         color: #616161;
         font-size: 12px;
-        &:hover{
-            color:#ff6700;
+
+        &:hover {
+            color: #ff6700;
         }
 
     }
@@ -90,10 +91,11 @@
     }
 
     .product-box {
-        
+
         // background: green;
         padding-top: 32px;
-padding-bottom:20px;
+        padding-bottom: 20px;
+
         .container {
             margin: 0;
             width: 1226px;
@@ -394,15 +396,15 @@ padding-bottom:20px;
                         text-decoration: none;
                     }
 
-                    .sale-btn>a{
+                    .sale-btn>a {
                         font-size: 16px;
                         width: 298px;
                         margin-right: 10px;
                         background: #ff6700;
                         color: #fff;
                         display: inline-block;
-                        height:52px;
-                        
+                        height: 52px;
+
                     }
 
                     .favorite-btn>a {
@@ -428,30 +430,34 @@ padding-bottom:20px;
             }
         }
     }
-    .product-detail{
-        background:#f5f5f5;
-        padding-bottom:50px;
-        .container{
-            width:1226px;
-            padding:0;
-            h3{
-                font-size:22px;
-                margin-bottom:20px;
+
+    .product-detail {
+        background: #f5f5f5;
+        padding-bottom: 50px;
+
+        .container {
+            width: 1226px;
+            padding: 0;
+
+            h3 {
+                font-size: 22px;
+                margin-bottom: 20px;
             }
-            
+
         }
     }
 }
+
 /* 侧边固定定位 */
 .position {
     position: fixed;
     bottom: 40px;
-    right: 33px;
+    left: 50%;
+    margin-left: 613px;
     width: 27px;
-    
-    border-left: 1px solid #f5f5f5;
-    border-right: 1px solid #f5f5f5;
-   
+
+
+
     z-index: 250;
 
     a {
@@ -460,10 +466,11 @@ padding-bottom:20px;
         height: 40px;
         text-align: center;
         text-decoration: none;
-         position: relative;
-         background: #fff;
+        position: relative;
+        background: #fff;
         border-bottom: 1px solid #f5f5f5;
         color: #333;
+
         .position-img {
             width: 25px;
             height: 40px;
@@ -542,14 +549,15 @@ padding-bottom:20px;
                 display: block;
             }
         }
-       &:nth-child(6){
-        //   background:red;
-          margin-top:14px;
-          
-          
-       } 
+
+        &:nth-child(6) {
+            //   background:red;
+            margin-top: 14px;
+
+
+        }
     }
-  
+
 }
 
 @import './footer.less';

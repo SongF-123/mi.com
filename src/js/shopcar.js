@@ -192,11 +192,15 @@ if (shop) {
                 })
 
             }
+
+            /* 页面加载时就执行 */
             $(function() {
                 tolPrice()
                 sumnumber()
             })
 
+
+            /* 全选 */
             $("#allcheck").on('click', function() {
                 var a = $("#allcheck");
 
@@ -212,6 +216,8 @@ if (shop) {
 
             })
 
+
+            /* 添加数据 */
             function addItem(id, price, num) {
                 let product = cookie.get('product')
 
@@ -241,14 +247,6 @@ if (shop) {
                 }
                 cookie.set('product', JSON.stringify(product), 1)
             }
-
-
-
-
-
-
-
-
 
         }
     });
